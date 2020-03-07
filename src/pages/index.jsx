@@ -1,11 +1,12 @@
 import React from 'react'
 import Bar from '../components/Bar'
-import Header from '../components/Header'
 import Nav from '../components/Nav'
 import Layout from '../components/Layout'
 import '../assets/styles/style.scss'
 import Jumbotron from '../components/Jumbotron'
+import Button from '../components/Button'
 import Footer from '../components/Footer'
+import Profile from '../components/Profile'
 
 const navItems = [
 	{
@@ -15,7 +16,7 @@ const navItems = [
 	},
 	{
 		title: 'About',
-		address: '#',
+		address: '/about',
 		active: false,
 	},
 	{
@@ -37,20 +38,38 @@ const navItems = [
 
 const Index = () => (
 	<Layout>
-		<Bar left="info@testemail.com" right="call us now 020 341 123123" />
-		<Header>
-			<img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" width="200px" alt="Logo" />
-		</Header>
-		<Nav items={navItems} />
-		<Jumbotron title="About Us" />
-		<div className="content">
-			<div className="flex">
-				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae quam quaerat dolore consectetur doloribus eaque saepe nesciunt. Doloremque dicta nostrum laudantium nulla at deserunt nesciunt repellendus, non voluptate similique, earum perferendis culpa excepturi repudiandae harum. Repellat eligendi quod ex deserunt eaque doloribus asperiores! Accusamus quasi necessitatibus, laudantium debitis quis, aut labore illum hic animi aliquam omnis qui commodi saepe facilis placeat soluta eos. Ad, odio quo. Porro placeat quia tempore odit, quibusdam a magni sunt ipsum ipsa itaque adipisci cumque aperiam quod voluptatibus optio nostrum alias reiciendis fugiat aspernatur qui laborum officia nulla ea. Suscipit, dicta error sint laudantium iusto, consectetur quae architecto accusantium quas quod excepturi et quia delectus expedita inventore corrupti quasi debitis aut. Reiciendis, suscipit? Voluptatibus commodi quae accusamus expedita, deleniti quia. A quos dolor doloremque error accusamus, magni autem quia quam? Debitis qui corrupti rem cupiditate. Earum libero, enim omnis perspiciatis exercitationem accusantium soluta iste cumque numquam optio sit assumenda aspernatur odio nulla autem veritatis dignissimos quibusdam a! Itaque consequuntur velit impedit distinctio eveniet consequatur similique quibusdam nobis maiores veritatis. Commodi tempora impedit odio minus ea modi nemo, quidem rerum esse unde harum quasi dolorem sit libero eaque. Ducimus rem quae tempora porro sapiente architecto aperiam.
-				</p>
-				<img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80" alt="business" />
+		<main className="container">
+			<Bar left="info@testemail.com" right="call us now 020 341 123123" />
+			<Nav items={navItems} dark />
+			<Jumbotron
+				image="https://images.unsplash.com/photo-1578923815449-3d930f68c13e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80"
+				dark
+			>
+				<div className="home-jumbotron">
+					<div className="jumbotron-image">
+						<img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" width="200px" alt="Logo" />
+					</div>
+					<span className="jumbotron-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat blanditiis maxime dolores recusandae in distinctio aperiam a?</span>
+					<div className="jumbotron-buttons">
+						<Button active>Call us now</Button>
+						<Button>Learn More</Button>
+					</div>
+				</div>
+			</Jumbotron>
+			<div className="home">
+				<h1>Welcome</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, illo cupiditate iste eos voluptas laudantium neque ex placeat enim nam quas cumque esse quod sit iusto dolorem aspernatur pariatur dolorum, a adipisci. Itaque accusantium praesentium molestias non maxime alias sit. Ducimus odit placeat ad esse facere voluptate, doloribus, aut atque ut dolorem soluta quos id aspernatur nihil debitis assumenda repudiandae fugit, sequi doloremque temporibus qui non? Voluptatum accusantium ullam sit deserunt quidem eveniet molestiae, error blanditiis explicabo quaerat saepe porro adipisci possimus fugit excepturi, eaque illum. Voluptatibus dolorum nostrum distinctio delectus consectetur voluptates, impedit quidem laborum quo earum id? Eius quisquam, reprehenderit aliquid natus fugit quod repellendus laboriosam, impedit iste repellat ab harum a. Quam mollitia ab deleniti tenetur molestiae. Debitis repellat odio cupiditate, officia perferendis inventore quaerat? Odio, laborum deleniti saepe ullam vero tempora. Odio, esse sequi illum ullam voluptate dolorum nostrum pariatur tempore, nobis sunt beatae saepe aut eius non facere soluta similique in commodi aliquid magni? Quos neque, ipsum quisquam libero nihil corporis maxime obcaecati facere voluptatem illo itaque tempora voluptate molestias, ducimus quasi velit! Quo provident dolorum reiciendis perspiciatis atque doloribus a rerum, minima sequi eos labore deleniti aspernatur, dolor cupiditate culpa libero autem placeat? Earum placeat animi molestias libero commodi adipisci quam facere obcaecati nam nihil similique beatae dignissimos, quaerat perspiciatis. Quidem est aliquid adipisci illo voluptas! Consequatur officia iste nobis! Excepturi animi, voluptatem iusto sint illo perferendis similique, odit porro nihil incidunt laboriosam aperiam, optio nemo totam deserunt nobis temporibus? Aut odio adipisci perferendis.</p>
+				<h1>Our Expertise</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, ut autem nam suscipit dicta dolores fugit perferendis quod officiis ducimus temporibus vel molestiae magnam, soluta debitis similique tempora praesentium dolorem.</p>
+				<div className="profiles">
+					<Profile image="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" title="John Doe" />
+					<Profile image="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" title="John Doe" />
+					<Profile image="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" title="John Doe" />
+					<Profile image="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" title="John Doe" />
+				</div>
+				<h1>What do our clients think</h1>
 			</div>
-		</div>
+		</main>
 		<Footer>
 			<span>Comapny Name<br />Company Address</span>
 			<div style={{width: '300px', height: '100px', background: 'white'}} />

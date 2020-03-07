@@ -1,7 +1,12 @@
 // Imports
+// Variables
 @import "./variables/colors.scss";
 @import "./variables/fonts.scss";
 @import "./variables/displays.scss";
+
+// Pages
+@import "./home.scss";
+@import "./about.scss";
 
 body {
     margin: 0;
@@ -27,38 +32,34 @@ body {
         color: $blue;
     }
 
-    .content {
-        padding: 2rem;
-        background: $gray;
+    h1 {
+        color: $blue;
+        font-family: $font-title;
+        font-weight: 700;
+    }
 
-        .flex {
-            display: flex;
-
-            p {
-                font-size: 1.5rem;
-                flex-basis: 60%;
-            }
-    
-            img {
-                margin-left: 3rem;
-                flex: 1;
-                align-self: flex-start;
-                max-width: 100%;
-                height: auto;
-            }
-        }
+    .container {
+        flex: 1;
+        position: relative;
+        width: inherit;
     }
 }
 
 
 @media only screen and (max-width: $medium) {
     body {
-        .content {
-            .flex {
-                flex-direction: column-reverse;
-                
-                img {
-                    align-self: flex-end;
+        
+        .home-jumbotron {
+            width: auto;
+            margin-top: 1rem;
+
+            .jumbotron-buttons {
+                flex-direction: column;
+    
+                * {
+                    &:nth-child(1) {
+                        margin-bottom: 1.5rem;
+                    }
                 }
             }
         }
