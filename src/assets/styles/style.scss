@@ -1,0 +1,66 @@
+// Imports
+@import "./variables/colors.scss";
+@import "./variables/fonts.scss";
+@import "./variables/displays.scss";
+
+body {
+    margin: 0;
+    padding: 0;
+    color: $black;
+
+    * {
+        box-sizing: border-box;
+    }
+    
+    ::before, ::after {
+        box-sizing: border-box;
+    }
+    
+    ul, li {
+        list-style: none;
+        padding-inline-start: 0%;
+    }
+    
+    a {
+        text-decoration: none;
+        transition: all .3s ease;
+        color: $blue;
+    }
+
+    .content {
+        padding: 2rem;
+        background: $gray;
+
+        .flex {
+            display: flex;
+
+            p {
+                font-size: 1.5rem;
+                flex-basis: 60%;
+            }
+    
+            img {
+                margin-left: 3rem;
+                flex: 1;
+                align-self: flex-start;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: $medium) {
+    body {
+        .content {
+            .flex {
+                flex-direction: column-reverse;
+                
+                img {
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+}
