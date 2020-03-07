@@ -84,6 +84,9 @@
     top: 0;
     position: fixed !important;
     z-index: 3 !important;
+    visibility: none;
+    opacity: 0;
+    box-shadow: 0 30px 30px -30px $shadow;
 }
 
 @media only screen and (max-width: $medium) {

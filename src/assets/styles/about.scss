@@ -6,17 +6,20 @@
     .flex {
         display: flex;
 
-        p {
+        .about-text {
             font-size: 1.5rem;
             flex-basis: 60%;
         }
 
-        img {
+        .about-image {
             margin-left: 3rem;
             flex: 1;
             align-self: flex-start;
-            max-width: 100%;
-            height: auto;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     }
 }
@@ -26,7 +29,8 @@
         .flex {
             flex-direction: column-reverse;
             
-            img {
+            .about-image {
+                margin: 0;
                 align-self: flex-end;
             }
         }
