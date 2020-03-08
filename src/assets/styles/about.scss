@@ -29,6 +29,10 @@
         .flex {
             flex-direction: column-reverse;
             
+            .about-text {
+                font-size: 1rem;
+            }
+
             .about-image {
                 margin: 0;
                 align-self: flex-end;
