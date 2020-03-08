@@ -7,6 +7,7 @@ import '../assets/styles/style.scss'
 import Jumbotron from '../components/Jumbotron'
 import Footer from '../components/Footer'
 import Title from '../components/Title'
+import Card from '../components/Card'
 
 const navItems = [
 	{
@@ -44,16 +45,32 @@ const Person = () => (
 				<img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" width="200px" alt="Logo" />
 			</Header>
 			<Nav items={navItems} />
-			<Jumbotron justifyContent="flex-start" alignItems="flex-end">
-				<Title>About us</Title>
+			<Jumbotron justifyContent="flex-start" alignItems="flex-end" image="https://images.unsplash.com/photo-1489410342162-b4b300a0bb15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80">
+				<div className="person-jumbotron">
+					<div className="person-name">
+						<Title>John Doe</Title>
+					</div>
+					<div className="person-title">
+						<Title>Barrister</Title>
+					</div>
+				</div>
 			</Jumbotron>
-			<div className="about">
+			<div className="person">
 				<div className="flex">
-					<p className="about-text">
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae quam quaerat dolore consectetur doloribus eaque saepe nesciunt. Doloremque dicta nostrum laudantium nulla at deserunt nesciunt repellendus, non voluptate similique, earum perferendis culpa excepturi repudiandae harum. Repellat eligendi quod ex deserunt eaque doloribus asperiores! Accusamus quasi necessitatibus, laudantium debitis quis, aut labore illum hic animi aliquam omnis qui commodi saepe facilis placeat soluta eos. Ad, odio quo. Porro placeat quia tempore odit, quibusdam a magni sunt ipsum ipsa itaque adipisci cumque aperiam quod voluptatibus optio nostrum alias reiciendis fugiat aspernatur qui laborum officia nulla ea. Suscipit, dicta error sint laudantium iusto, consectetur quae architecto accusantium quas quod excepturi et quia delectus expedita inventore corrupti quasi debitis aut. Reiciendis, suscipit? Voluptatibus commodi quae accusamus expedita, deleniti quia. A quos dolor doloremque error accusamus, magni autem quia quam? Debitis qui corrupti rem cupiditate. Earum libero, enim omnis perspiciatis exercitationem accusantium soluta iste cumque numquam optio sit assumenda aspernatur odio nulla autem veritatis dignissimos quibusdam a! Itaque consequuntur velit impedit distinctio eveniet consequatur similique quibusdam nobis maiores veritatis. Commodi tempora impedit odio minus ea modi nemo, quidem rerum esse unde harum quasi dolorem sit libero eaque. Ducimus rem quae tempora porro sapiente architecto aperiam.
-					</p>
-					<div className="about-image">
-						<img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80" alt="business" />
+					<div className="left">
+						<Card>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel voluptas nisi nobis corporis praesentium, voluptatibus, molestiae sint dolorum repudiandae asperiores perferendis perspiciatis ullam adipisci ex sapiente excepturi expedita? Temporibus, consequatur!</Card>
+						<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quos consectetur distinctio. Consectetur harum optio veritatis repudiandae corrupti quasi. Unde deleniti expedita autem at officiis sequi maxime minus odit molestiae.</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione tenetur vitae rerum accusantium iusto quod? Perspiciatis at, illo maiores neque ad porro laboriosam excepturi aliquam. Voluptas, dolor iusto temporibus facilis quas non, animi consectetur dicta alias nam unde omnis ex odit. Quam ab recusandae, alias, laudantium nesciunt quibusdam veniam accusamus saepe veritatis quo animi fugiat incidunt sunt culpa iure maxime fugit quidem suscipit ipsum laborum aut. Atque iure mollitia culpa fugiat voluptate! Dolor repudiandae fugit nobis illo ad unde dolorum nulla, tempore at quidem, blanditiis ut velit eaque ea quia debitis, illum suscipit nisi officiis minima veritatis repellat reprehenderit autem error? Ipsum natus esse sequi neque molestias officiis, nulla numquam qui pariatur error corporis vel ullam porro modi, sunt at nostrum. Nesciunt natus quas cumque autem reprehenderit voluptatibus id iure illo laborum. Provident assumenda consequuntur enim eveniet eum. Corrupti suscipit debitis excepturi ad error dicta exercitationem maxime assumenda consectetur, quae sunt earum labore voluptates iure tempore ipsum eum harum perspiciatis aliquid. Officia voluptates est, id deleniti fugiat dignissimos impedit minima ad assumenda nobis sapiente quae laborum labore, ea ab sed nam illum cum eos fugit reiciendis molestiae. Earum, consectetur. Id rem explicabo eum, doloremque quam officia veritatis nam harum?</p>
+					</div>
+					<div className="right">
+						<div className="info">
+							<div className="title">
+								At a Glance
+							</div>
+							<div className="content">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptatum quisquam blanditiis distinctio unde quas consectetur doloribus reiciendis dolorum nemo velit quia, asperiores iste corporis deleniti soluta expedita obcaecati ipsum?
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

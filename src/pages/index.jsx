@@ -8,6 +8,7 @@ import Button from '../components/Button'
 import Footer from '../components/Footer'
 import Profile from '../components/Profile'
 import Card from '../components/Card'
+import Helmet from 'react-helmet'
 
 const navItems = [
 	{

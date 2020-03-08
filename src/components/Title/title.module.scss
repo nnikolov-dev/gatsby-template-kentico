@@ -6,9 +6,6 @@
     display: flex;
     padding: 1rem;
     background: $white;
-    margin-left: 2rem;
-    margin-bottom: 2.5rem;
-    width: 50%;
     font-family: $font-title;
     font-weight: 700;
     font-size: 4rem;
@@ -18,9 +15,6 @@
 
 @media only screen and (max-width: $medium) {
     .Title {
-        margin-left: 0;
-        width: 70%;
         font-size: 1.5rem;
-        justify-content: center;
     }
 }

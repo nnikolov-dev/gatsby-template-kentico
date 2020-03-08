@@ -45,7 +45,9 @@ const About = () => (
 			</Header>
 			<Nav items={navItems} />
 			<Jumbotron justifyContent="flex-start" alignItems="flex-end">
-				<Title>About us</Title>
+				<div className="about-jumbotron">
+					<Title>About us</Title>
+				</div>
 			</Jumbotron>
 			<div className="about">
 				<div className="flex">

@@ -27,6 +27,8 @@
     "@kentico/gatsby-source-kontent": "4.0.0-beta4",
     "browser-monads": "^1.0.0",
     "gatsby": "^2.18.0",
+    "gatsby-plugin-manifest": "^2.2.44",
+    "gatsby-plugin-offline": "^3.0.37",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sass": "^2.1.20",
     "node-sass": "^4.13.1",
