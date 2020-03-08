@@ -36,11 +36,28 @@
 
 .home {
     padding: 2rem;
+    font-size: x-large;
+
+    h1 {
+        font-size: xxx-large;
+    }
 
     .profiles {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-items: flex-start;
         flex-wrap: wrap;
         margin: 3rem 0;
+    }
+
+    .quotes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .quote {
+            max-width: 500px;
+            margin: 1.5rem;
+        }
     }
 }

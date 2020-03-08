@@ -5,7 +5,9 @@ import styles from './profile.module.scss'
 const Profile = ({image, title}) => (
 	<div className={styles.Profile}>
 		<img src={image} alt={title} className={styles.Image} />
-		<span className={styles.Title}>{title}</span>
+		<div className={styles.Overlay}>
+			<div className={styles.Title}>{title}</div>
+		</div>
 	</div>
 )
 

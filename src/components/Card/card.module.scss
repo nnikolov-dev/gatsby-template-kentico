@@ -1,0 +1,23 @@
+@import "../../assets/styles/variables/colors.scss";
+@import "../../assets/styles/variables/fonts.scss";
+@import "../../assets/styles/variables/displays.scss";
+
+.Card {
+    position: relative;
+    min-height: 200px;
+    background: $blue;
+    color: $white;
+    padding: 0.5rem 3rem;
+    font-size: 1.5rem;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        right: 30px;
+        background: inherit;
+        width :30px;
+        height: 30px;
+        clip-path: polygon(100% 0, 0 0, 100% 100%);
+    }
+}
