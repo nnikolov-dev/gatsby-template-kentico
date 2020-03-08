@@ -17,12 +17,12 @@ const navItems = [
 	{
 		title: 'About',
 		address: '/about',
-		active: true,
+		active: false,
 	},
 	{
 		title: 'The Team',
 		address: '/person',
-		active: false,
+		active: true,
 	},
 	{
 		title: 'Services',
@@ -36,7 +36,7 @@ const navItems = [
 	},
 ]
 
-const About = () => (
+const Person = () => (
 	<Layout>
 		<div className="container">
 			<Bar left="info@testemail.com" right="call us now 020 341 123123" />
@@ -66,4 +66,4 @@ const About = () => (
 )
 
 
-export default About
+export default Person

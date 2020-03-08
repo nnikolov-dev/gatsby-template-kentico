@@ -12,7 +12,7 @@ import Card from '../components/Card'
 const navItems = [
 	{
 		title: 'Home',
-		address: '#',
+		address: '/',
 		active: true,
 	},
 	{
@@ -22,7 +22,7 @@ const navItems = [
 	},
 	{
 		title: 'The Team',
-		address: '#',
+		address: '/person',
 		active: false,
 	},
 	{

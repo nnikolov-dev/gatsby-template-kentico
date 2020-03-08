@@ -94,17 +94,15 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 0.5rem;
-
+        
         .Item {
-            font-size: 1rem;
+            font-size: 1.5rem;
              
             &:not(.Active) {
                 display: none;
             }
         }
         .Toggle {
-            top: 0.7rem;
             display: block;
         }
     }
