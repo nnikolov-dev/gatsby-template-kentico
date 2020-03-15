@@ -10,10 +10,12 @@
     background: $brown;
     margin: 1rem;
     max-width: 300px;
+    border-radius: 7px;
 
     .Image {
         max-width: 100%;
         height: auto;
+        border-radius: 7px;
     }
 
     .Overlay {
@@ -26,18 +28,20 @@
         width: 100%;
         height: 0;
         transition: all 0.5s ease;
+        border-radius: 7px;
 
         .Title {
             margin-top: 1rem;
             padding: 0 1rem;
             text-align: center;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
     }
 
     &:hover {
         background: darken($color: $gray, $amount: 30);
         color: $white;
+        box-shadow: 0px 0px 30px -14px rgba(0,0,0,0.75);
 
         .Overlay {
             height: 100%;

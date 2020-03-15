@@ -25,6 +25,21 @@
 
         .left {
             flex-basis: 70%;
+
+            .carousel {
+                display: flex;
+                padding: 0 1rem;
+                margin-bottom: 5rem;
+                align-items: center;
+
+                .arrow-left {
+                    margin: 0 1rem;
+                }
+
+                .arrow-right {
+                    @extend .arrow-left;
+                }
+            }
         }
 
         .right {

@@ -58,7 +58,15 @@ const Person = () => (
 			<div className="person">
 				<div className="flex">
 					<div className="left">
-						<Card>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel voluptas nisi nobis corporis praesentium, voluptatibus, molestiae sint dolorum repudiandae asperiores perferendis perspiciatis ullam adipisci ex sapiente excepturi expedita? Temporibus, consequatur!</Card>
+						<div className="carousel">
+							<div className="arrow-left">
+								left
+							</div>
+							<Card>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel voluptas nisi nobis corporis praesentium, voluptatibus, molestiae sint dolorum repudiandae asperiores perferendis perspiciatis ullam adipisci ex sapiente excepturi expedita? Temporibus, consequatur!</Card>				
+							<div className="arrow-right">
+								right
+							</div>
+						</div>
 						<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quos consectetur distinctio. Consectetur harum optio veritatis repudiandae corrupti quasi. Unde deleniti expedita autem at officiis sequi maxime minus odit molestiae.</h2>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione tenetur vitae rerum accusantium iusto quod? Perspiciatis at, illo maiores neque ad porro laboriosam excepturi aliquam. Voluptas, dolor iusto temporibus facilis quas non, animi consectetur dicta alias nam unde omnis ex odit. Quam ab recusandae, alias, laudantium nesciunt quibusdam veniam accusamus saepe veritatis quo animi fugiat incidunt sunt culpa iure maxime fugit quidem suscipit ipsum laborum aut. Atque iure mollitia culpa fugiat voluptate! Dolor repudiandae fugit nobis illo ad unde dolorum nulla, tempore at quidem, blanditiis ut velit eaque ea quia debitis, illum suscipit nisi officiis minima veritatis repellat reprehenderit autem error? Ipsum natus esse sequi neque molestias officiis, nulla numquam qui pariatur error corporis vel ullam porro modi, sunt at nostrum. Nesciunt natus quas cumque autem reprehenderit voluptatibus id iure illo laborum. Provident assumenda consequuntur enim eveniet eum. Corrupti suscipit debitis excepturi ad error dicta exercitationem maxime assumenda consectetur, quae sunt earum labore voluptates iure tempore ipsum eum harum perspiciatis aliquid. Officia voluptates est, id deleniti fugiat dignissimos impedit minima ad assumenda nobis sapiente quae laborum labore, ea ab sed nam illum cum eos fugit reiciendis molestiae. Earum, consectetur. Id rem explicabo eum, doloremque quam officia veritatis nam harum?</p>
 					</div>

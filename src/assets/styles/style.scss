@@ -14,6 +14,7 @@ body {
     margin: 0;
     padding: 0;
     color: $black;
+    background: linear-gradient($background, $gray);
 
     * {
         box-sizing: border-box;
@@ -32,6 +33,12 @@ body {
         text-decoration: none;
         transition: all .3s ease;
         color: $blue;
+        border-bottom: 1px solid transparent;
+        transition: all 0.15s ease-in-out;
+
+        &:hover {
+            border-color: $blue;
+        }
     }
 
     h1 {
