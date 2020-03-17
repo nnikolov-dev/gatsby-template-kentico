@@ -86,8 +86,10 @@ const Index = () => (
 						</div>
 					</Layout>
 					<div className="quotes-section">
-						<img src={waveImage} alt="Wave" className="wave" />
-						<h1>What do our clients think</h1>
+						<div className="title">
+							<img src={waveImage} alt="Wave" className="wave" />
+							<h1>What do our clients say</h1>
+						</div>
 						<div className="quotes">
 							<div className="quote">
 								<Card>

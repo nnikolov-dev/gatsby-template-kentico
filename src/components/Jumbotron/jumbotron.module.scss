@@ -11,7 +11,7 @@
     background-attachment: fixed;
     background-position: 50% 50%;
     box-shadow: inset 0 30px 30px -30px $shadow;
-    border-bottom-right-radius: 50%;
+    border-bottom-right-radius: 60%;
     animation: animatedBackground 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
     .Dark {
@@ -20,7 +20,7 @@
         width: 100%;
         height: 100%;
         background: rgba($black, 0.5);
-        border-bottom-right-radius: 50%;
+        border-bottom-right-radius: 60%;
     }
 
     * {

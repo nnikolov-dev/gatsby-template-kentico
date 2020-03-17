@@ -71,15 +71,24 @@
             margin: 0 -2rem;
             background: $white;
 
-            h1 {
-                margin-left: 4rem;
-                font-size: 2rem;
+            .title {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+                position: relative;
+
+                .wave {
+                    width: 100%;
+                    transform: scaleX(-1);
+                }
+
+                h1 {
+                    padding-left: 15%;
+                    position: absolute;
+                    font-size: 3rem;
+                }
             }
 
-            .wave {
-                width: 100%;
-                transform: scaleX(-1);
-            }    
 
             .quotes {
                 padding: 2rem;
@@ -126,6 +135,14 @@
                     border-left: none;
                 }
             }
+
+            .quotes-section {
+                .title {
+                    h1 {
+                        font-size: 2rem;
+                    }
+                }
+            }
         }
     }
 }
@@ -135,6 +152,11 @@
     .home {
         .content {
             .quotes-section {
+                .title {
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+                }
                 .quotes {
                     .quote {
                         max-width: 300px;
