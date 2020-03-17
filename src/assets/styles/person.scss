@@ -1,64 +1,55 @@
-.person-jumbotron {
-    margin-left: 2rem;
-    align-self: center;
-
-    .person-name {
-        width: 200%;
-    }
-
-    .person-title {
-        margin-top: 0.3rem;
-
-        * {
-            font-size: 2rem;
-        }
-    }
-}
-
-
 .person {
-    padding: 2rem;
 
-    .flex {
-        display: flex;
-        flex-wrap: wrap;
-
-        .left {
-            flex-basis: 70%;
-
-            .carousel {
-                display: flex;
-                padding: 0 1rem;
-                margin-bottom: 5rem;
-                align-items: center;
-
-                .arrow-left {
-                    margin: 0 1rem;
-                }
-
-                .arrow-right {
-                    @extend .arrow-left;
-                }
+    .jumbotron {
+        margin-left: 2rem;
+        align-self: center;
+    
+        .person-name {
+            width: 200%;
+        }
+    
+        .person-title {
+            margin-top: 0.3rem;
+    
+            * {
+                font-size: 2rem;
             }
         }
+    }
 
-        .right {
-            padding-left: 2rem;
-            flex-basis: 30%;
+    .content {
+        padding-top: 2rem;
 
-            .info {
-                .title {
-                    background: $dark;
-                    padding: 0.5rem 1rem;
-                    font-family: $font-title;
-                    font-style: italic;
-                    font-weight: 700;
-                    font-size: 2rem;
-                    color: $white;
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+
+            .left {
+                flex-basis: 70%;
+                
+                .carousel {
+                    margin-bottom: 5rem;
                 }
-                .content {
-                    background: $gray;
-                    padding: 0.5rem 1rem;
+            }
+
+            .right {
+                padding-left: 2rem;
+                flex-basis: 30%;
+
+                .info {
+                    .title {
+                        background: $dark;
+                        padding: 0.5rem 1rem;
+                        font-family: $font-title;
+                        font-style: italic;
+                        font-weight: 700;
+                        font-size: 2rem;
+                        color: $white;
+                    }
+                    .content {
+                        background: $gray;
+                        padding: 0.5rem 1rem;
+                    }
                 }
             }
         }
@@ -67,24 +58,25 @@
 
 
 @media only screen and (max-width: $medium) {
-    .person-jumbotron {
-        .person-title {
-            * {
-                font-size: 1rem;
-            }
-        }
-    }
-    
     .person {
-        .flex {
-            .left {
-                flex-basis: 100%;
+        .jumbotron {
+            .person-title {
+                * {
+                    font-size: 1rem;
+                }
             }
-            .right {
-                flex-basis: 100%;
-                padding: 0;
+        }
+        
+        .content {
+            .flex {
+                .left {
+                    flex-basis: 100%;
+                }
+                .right {
+                    flex-basis: 100%;
+                    padding: 0;
+                }
             }
         }
     }
-    
 }

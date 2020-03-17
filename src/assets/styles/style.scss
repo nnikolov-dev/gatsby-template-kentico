@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     color: $black;
-    background: linear-gradient($background, $gray);
+    background: $background;
 
     * {
         box-sizing: border-box;
@@ -51,26 +51,5 @@ body {
         flex: 1;
         position: relative;
         width: inherit;
-    }
-}
-
-
-@media only screen and (max-width: $medium) {
-    body {
-        
-        .home-jumbotron {
-            width: auto;
-            margin-top: 1rem;
-
-            .jumbotron-buttons {
-                flex-direction: column;
-    
-                * {
-                    &:nth-child(1) {
-                        margin-bottom: 1.5rem;
-                    }
-                }
-            }
-        }
     }
 }

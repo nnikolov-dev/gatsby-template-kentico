@@ -25,6 +25,7 @@
   "license": "MIT",
   "dependencies": {
     "@kentico/gatsby-source-kontent": "4.0.0-beta4",
+    "animate.css": "^3.7.2",
     "browser-monads": "^1.0.0",
     "gatsby": "^2.18.0",
     "gatsby-plugin-manifest": "^2.2.44",
@@ -33,6 +34,7 @@
     "gatsby-plugin-sass": "^2.1.20",
     "node-sass": "^4.13.1",
     "react": "^16.5.1",
+    "react-animated-css": "^1.2.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0"
   },

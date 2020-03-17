@@ -1,10 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Layout from '../Layout'
 import styles from './footer.module.scss'
 
 const Footer = ({children}) => (
 	<div className={styles.Footer}>
-		{children}
+		<Layout>
+			<div className={styles.Content}>
+				{children}
+			</div>
+		</Layout>
 	</div>
 )
 

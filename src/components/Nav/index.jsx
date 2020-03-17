@@ -2,6 +2,7 @@ import React, {useState, useRef, useEffect} from 'react'
 import PropTypes from 'prop-types'
 import {Link} from 'gatsby'
 import {window} from 'browser-monads'
+import Layout from '../Layout'
 import styles from './nav.module.scss'
 
 const Menu = ({items, dark, fixed, navRef}) => {
@@ -9,19 +10,23 @@ const Menu = ({items, dark, fixed, navRef}) => {
 	const toggleNav = () => setVisible(!visible)
 	return (
 		<div className={`${dark ? styles.Dark : styles.Nav} ${fixed && styles.Fixed}`} ref={navRef}>
-			{items.map(({title, address, active}) => (
-				<div
-					className={`${styles.Item} ${visible && styles.Visible} ${active && styles.Active}`}
-					key={title}
-				>
-					<Link to={address}>{title}</Link>
+			<Layout>
+				<div className={styles.Items}>
+					{items.map(({title, address, active}) => (
+						<div
+							className={`${styles.Item} ${visible && styles.Visible} ${active && styles.Active}`}
+							key={title}
+						>
+							<Link to={address}>{title}</Link>
+						</div>
+					))}
+					<div className={styles.Toggle} onClick={toggleNav}>
+						<div />
+						<div />
+						<div />
+					</div>
 				</div>
-			))}
-			<div className={styles.Toggle} onClick={toggleNav}>
-				<div />
-				<div />
-				<div />
-			</div>
+			</Layout>
 		</div>
 	)
 }

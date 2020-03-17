@@ -4,7 +4,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 70%;
     
         .jumbotron-image {
             margin-bottom: 2rem;
@@ -37,8 +36,7 @@
     }
 
     .content {
-        padding: 2rem;
-        padding-bottom: 0;
+        padding-top: 2rem;
 
         .flex {
             display: flex;
@@ -69,7 +67,7 @@
         }
 
         .quotes-section {
-            width: calc(100% + 4rem);
+            width: calc(100% + 2rem);
             margin: 0 -2rem;
             background: $white;
 
@@ -99,6 +97,21 @@
 
 @media only screen and (max-width: $medium) {
     .home {
+        .jumbotron {
+            width: auto;
+            margin-top: 1rem;
+
+            .jumbotron-buttons {
+                flex-direction: column;
+    
+                * {
+                    &:nth-child(1) {
+                        margin-bottom: 1.5rem;
+                    }
+                }
+            }
+        }
+
         .content {
             .flex {
                 flex-direction: column;

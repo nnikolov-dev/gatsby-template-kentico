@@ -2,13 +2,6 @@
 @import "../../assets/styles/variables/displays.scss";
 
 .Layout {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
     max-width: 1800px;
     margin: 0 auto;
-    background: $background;
-    border-top: none;
-    border-bottom: none;
-    // box-shadow: 0px 0px 92px -14px rgba(0,0,0,0.75);
 }

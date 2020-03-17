@@ -10,11 +10,13 @@
     padding: 0.5rem 3rem;
     font-size: 1.3rem;
     border-radius: 7px;
+    display: flex;
+    align-items: center;
 
     &::after {
         content: '';
         position: absolute;
-        top: 100%;
+        top: calc(100% - 1px);
         right: 30px;
         background: inherit;
         width :30px;
