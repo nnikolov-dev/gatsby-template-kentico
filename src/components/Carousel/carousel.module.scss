@@ -44,10 +44,19 @@
             justify-self: right;
         }
     }
+}
 
-    .Items {
-        .Item {
-            
+@media only screen and (max-width: $phone) {
+    .Carousel {
+        flex-direction: column;
+
+        .Left {
+            margin: 1rem 0;
+            transform: rotate(90deg);
+        }
+
+        .Right {
+            transform: rotate(-90deg);
         }
     }
 }
