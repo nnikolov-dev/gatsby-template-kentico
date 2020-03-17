@@ -67,7 +67,7 @@ const Index = () => (
 					</Jumbotron>
 				</Layout>
 				<div className="content">
-					<Layout>
+					<Layout padded>
 						<div className="flex">
 							<div className="left">
 								<h1>Welcome</h1>

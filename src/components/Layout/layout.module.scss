@@ -5,3 +5,14 @@
     max-width: 1800px;
     margin: 0 auto;
 }
+
+.Padded {
+    @extend .Layout;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1800px) {
+    .Padded {
+        padding: 2rem;
+    }
+}

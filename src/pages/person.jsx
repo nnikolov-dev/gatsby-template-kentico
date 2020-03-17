@@ -59,6 +59,8 @@ const Person = () => (
 							</div>
 						</div>
 					</Jumbotron>
+				</Layout>
+				<Layout padded>
 					<div className="content">
 						<div className="flex">
 							<div className="left">

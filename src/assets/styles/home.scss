@@ -73,6 +73,7 @@
 
             h1 {
                 margin-left: 4rem;
+                font-size: 2rem;
             }
 
             .wave {
@@ -85,6 +86,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
+
 
                 .quote {
                     max-width: 500px;
@@ -132,10 +134,6 @@
 @media only screen and (max-width: $phone) {
     .home {
         .content {
-            .flex {
-                padding: 2rem;
-            }
-            
             .quotes-section {
                 .quotes {
                     .quote {
