@@ -132,6 +132,10 @@
 @media only screen and (max-width: $phone) {
     .home {
         .content {
+            .flex {
+                padding: 2rem;
+            }
+            
             .quotes-section {
                 .quotes {
                     .quote {

@@ -26,7 +26,7 @@
 
             .left {
                 flex-basis: 70%;
-                
+
                 .carousel {
                     margin-bottom: 5rem;
                 }
@@ -68,9 +68,15 @@
         }
         
         .content {
+            padding: 2rem;
+
             .flex {
                 .left {
                     flex-basis: 100%;
+
+                    .carousel {
+                        margin-bottom: 1rem;
+                    }
                 }
                 .right {
                     flex-basis: 100%;
@@ -80,3 +86,4 @@
         }
     }
 }
+
