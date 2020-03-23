@@ -70,18 +70,30 @@ const Index = () => (
 					<Layout padded>
 						<div className="flex">
 							<div className="left">
-								<h1>Welcome</h1>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, cupiditate optio porro illum quibusdam error modi fuga reprehenderit debitis voluptatum libero officia molestias, quasi unde ullam sit corporis! Repellat, labore. <a href="/about">Read more about us</a></p>
-								<h1>Our Expertise</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, ut autem nam suscipit dicta dolores fugit perferendis quod officiis ducimus temporibus vel molestiae magnam, soluta debitis similique tempora praesentium dolorem. <a href="/about">Find more about our services</a></p>
-								<h1>Our Team</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, ut autem nam suscipit dicta dolores fugit perferendis quod officiis ducimus temporibus vel molestiae magnam, soluta debitis similique tempora praesentium dolorem. <a href="/about">Meet our team</a></p>
+								<div>
+									<h1>Welcome</h1>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, cupiditate optio porro illum quibusdam error modi fuga reprehenderit debitis voluptatum libero officia molestias, quasi unde ullam sit corporis! Repellat, labore. <a href="/about">Read more about us</a></p>
+								</div>
 							</div>
 							<div className="right">
 								<Profile image="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" title="Criminal Law" />
 								<Profile image="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" title="Matriomonial and Family Law" />
 								<Profile image="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" title="Motoring Offences" />
 								<Profile image="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" title="Some area of law" />
+							</div>
+						</div>
+						<div className="lr-section">
+							<div className="lr">
+								<h1>Our Expertise</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, ut autem nam suscipit dicta dolores fugit perferendis quod officiis ducimus temporibus vel molestiae magnam, soluta debitis similique tempora praesentium dolorem. <a href="/about">Find more about our services</a></p>
+							</div>
+							<div className="lr">
+								<h1>Our Team</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, ut autem nam suscipit dicta dolores fugit perferendis quod officiis ducimus temporibus vel molestiae magnam, soluta debitis similique tempora praesentium dolorem. <a href="/about">Find more about our services</a></p>
+							</div>
+							<div className="lr">
+								<h1>Our Company</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, ut autem nam suscipit dicta dolores fugit perferendis quod officiis ducimus temporibus vel molestiae magnam, soluta debitis similique tempora praesentium dolorem. <a href="/about">Find more about our services</a></p>
 							</div>
 						</div>
 					</Layout>
