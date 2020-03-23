@@ -100,7 +100,6 @@ const Index = () => (
 					<div className="quotes-section">
 						<div className="title">
 							<img src={waveImage} alt="Wave" className="wave" />
-							<h1>What do our clients say</h1>
 						</div>
 						<div className="quotes">
 							<div className="quote">
