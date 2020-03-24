@@ -4,23 +4,24 @@
 
 .Card {
     position: relative;
-    min-height: 200px;
-    background: $blue;
-    color: $white;
-    padding: 0.5rem 3rem;
+    // background: $blue;
+    // color: $white;
+    color: $black;
+    box-shadow: 0px 0px 30px -15px rgba($black, 0.75);
+    padding: 3rem;
     font-size: 1.3rem;
     border-radius: 7px;
     display: flex;
     align-items: center;
 
-    &::after {
-        content: '';
-        position: absolute;
-        top: calc(100% - 1px);
-        right: 30px;
-        background: inherit;
-        width :30px;
-        height: 30px;
-        clip-path: polygon(100% 0, 0 0, 100% 100%);
-    }
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     top: calc(100% - 1px);
+    //     right: 30px;
+    //     background: inherit;
+    //     width :30px;
+    //     height: 30px;
+    //     clip-path: polygon(100% 0, 0 0, 100% 100%);
+    // }
 }

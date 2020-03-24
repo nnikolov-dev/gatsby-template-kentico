@@ -19,8 +19,8 @@
             text-align: center;
             font-family: $font-title;
             font-style: italic;
-            font-size: 1.5rem; 
-            max-width: 50%;       
+            font-size: 1.5rem;    
+            max-width: 50%;    
         }
     
         .jumbotron-buttons {
@@ -77,14 +77,13 @@
 
         .lr-section {
             display: flex;
-            padding: 5rem;
-            padding-bottom: 3rem;
+            justify-content: space-between;
+            padding: 3rem 0;
             
             .lr {
-                margin-left: 3rem;
                 text-align: center;
                 border-right: 1px solid rgba($black, 0.2);
-                padding-right: 3rem;
+                padding: 0 3rem;
 
                 h1 {
                     font-size: 2rem;
@@ -96,43 +95,28 @@
                     }
                 }
 
+                &:first-of-type {
+                    padding-left: 0;
+                }
+
                 &:last-of-type {
                     border-right: none;
+                    padding-right: 0;
                 }
 
             }
         }
 
         .quotes-section {
-            width: calc(100% + 2rem);
-            margin: 0 -2rem;
+            margin: -2rem;
+            margin-top: 0;
             background: $white;
-
-            .title {
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-end;
-                position: relative;
-
-                .wave {
-                    width: 100%;
-                    transform: scaleX(-1);
-                }
-
-                h1 {
-                    padding-left: 15%;
-                    position: absolute;
-                    font-size: 3rem;
-                }
-            }
-
 
             .quotes {
                 padding: 2rem;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
-
 
                 .quote {
                     max-width: 500px;
@@ -197,14 +181,6 @@
                     }
                 }
             }
-
-            .quotes-section {
-                .title {
-                    h1 {
-                        font-size: 2rem;
-                    }
-                }
-            }
         }
     }
 }
@@ -220,8 +196,10 @@
                     }
                 }
                 .quotes {
+                    padding: 0;
+
                     .quote {
-                        max-width: 300px;
+                        max-width: 100%;
                     }
                 }
             }

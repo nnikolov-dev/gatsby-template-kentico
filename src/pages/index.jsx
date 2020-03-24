@@ -96,29 +96,26 @@ const Index = () => (
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, ut autem nam suscipit dicta dolores fugit perferendis quod officiis ducimus temporibus vel molestiae magnam, soluta debitis similique tempora praesentium dolorem. <a href="/about">Find more about our services</a></p>
 							</div>
 						</div>
-					</Layout>
-					<div className="quotes-section">
-						{/* <div className="title">
-							<img src={waveImage} alt="Wave" className="wave" />
-						</div> */}
-						<div className="quotes">
-							<div className="quote">
-								<Card>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolor commodi aliquam modi dolores error perferendis dolorem impedit temporibus. Illum, quam quas quisquam a fugit sint nobis quibusdam id tempora!
-								</Card>
-							</div>
-							<div className="quote">
-								<Card>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolor commodi aliquam modi dolores error perferendis dolorem impedit temporibus. Illum, quam quas quisquam a fugit sint nobis quibusdam id tempora!
-								</Card>
-							</div>
-							<div className="quote">
-								<Card>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolor commodi aliquam modi dolores error perferendis dolorem impedit temporibus. Illum, quam quas quisquam a fugit sint nobis quibusdam id tempora!
-								</Card>
+						<div className="quotes-section">
+							<div className="quotes">
+								<div className="quote">
+									<Card>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolor commodi aliquam modi dolores error perferendis dolorem impedit temporibus. Illum, quam quas quisquam a fugit sint nobis quibusdam id tempora!
+									</Card>
+								</div>
+								<div className="quote">
+									<Card>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolor commodi aliquam modi dolores error perferendis dolorem impedit temporibus. Illum, quam quas quisquam a fugit sint nobis quibusdam id tempora!
+									</Card>
+								</div>
+								<div className="quote">
+									<Card>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolor commodi aliquam modi dolores error perferendis dolorem impedit temporibus. Illum, quam quas quisquam a fugit sint nobis quibusdam id tempora!
+									</Card>
+								</div>
 							</div>
 						</div>
-					</div>
+					</Layout>
 				</div>
 			</section>
 		</main>
