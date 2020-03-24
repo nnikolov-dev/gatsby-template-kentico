@@ -113,7 +113,6 @@
             background: $white;
 
             .quotes {
-                padding: 2rem;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
@@ -178,28 +177,6 @@
 
                     &:nth-last-of-type(even) {
                         text-align: center;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-@media only screen and (max-width: $phone) {
-    .home {
-        .content {
-            .quotes-section {
-                .title {
-                    h1 {
-                        font-size: 1.5rem;
-                    }
-                }
-                .quotes {
-                    padding: 0;
-
-                    .quote {
-                        max-width: 100%;
                     }
                 }
             }
