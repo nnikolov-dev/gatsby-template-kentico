@@ -98,9 +98,9 @@ const Index = () => (
 						</div>
 					</Layout>
 					<div className="quotes-section">
-						<div className="title">
+						{/* <div className="title">
 							<img src={waveImage} alt="Wave" className="wave" />
-						</div>
+						</div> */}
 						<div className="quotes">
 							<div className="quote">
 								<Card>
