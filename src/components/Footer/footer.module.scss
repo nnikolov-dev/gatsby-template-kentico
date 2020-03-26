@@ -6,7 +6,8 @@
     background: $blue;
     color: $white;
     font-family: $font-title;
-    box-shadow: inset 0 30px 30px -30px $shadow;
+    border-top: 3px solid rgba($black, 0.2);
+    // box-shadow: inset 0 30px 30px -30px $shadow;
     padding: 3rem 2rem 2rem 2rem;
 
     .Content {

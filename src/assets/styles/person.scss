@@ -60,6 +60,9 @@
 @media only screen and (max-width: $medium) {
     .person {
         .jumbotron {
+            .person-name {
+                width: 100%;
+            }
             .person-title {
                 * {
                     font-size: 1rem;

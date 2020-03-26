@@ -1,13 +1,10 @@
 .home {
 
     .jumbotron {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin: 0 auto;
+        max-width: 40%;
     
         .jumbotron-image {
-            margin-bottom: 2rem;
-    
             img {
                 max-width: 100%;
                 height: auto;
@@ -20,13 +17,15 @@
             font-family: $font-title;
             font-style: italic;
             font-size: 1.5rem;    
-            max-width: 50%;    
+            align-self: center;
         }
     
         .jumbotron-buttons {
             display: flex;
+            align-self: center;
             justify-content: center;
-            padding: 3rem;
+            width: 70%;
+            margin: 0 auto;
     
             * {
                 &:nth-child(1) {
@@ -64,13 +63,40 @@
             }
 
             .right {
-                flex-basis: 50%;
                 display: flex;
-                justify-content: center;
-                align-items: flex-start;
-                flex-wrap: wrap;
-                margin: 3rem 0;
+                flex-basis: 50%;
+                padding: 0 5rem;
                 border-left: 1px solid rgba($black, 0.2);
+
+                ul {
+                    align-self: center;
+
+                    li {
+                        color: $blue;
+                        font-size: 1.5rem;
+                        position: relative;
+                        margin-top: 1.5rem;
+                        cursor: pointer;
+                        transition: all 0.15s ease-in-out;
+
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            border-right: 2px solid $black;
+                            border-bottom: 2px solid $black;
+                            width: 10px;
+                            height: 10px;
+                            top: calc(50%);
+                            left: -20px;
+                            transform: translateY(-50%) rotate(-45deg);
+                        }
+
+                        &:hover {
+                            padding-left: 1rem;
+                            color: darken($color: $blue, $amount: 5)
+                        }
+                    }
+                }
             }
         }
 
@@ -118,8 +144,9 @@
                 justify-content: space-evenly;
 
                 .quote {
-                    max-width: 500px;
-                    margin: 1.5rem;
+                    display: flex;
+                    width: 50%;
+                    padding: 2rem;
                 }
             }
         }
@@ -130,7 +157,8 @@
     .home {
         .jumbotron {
             width: auto;
-            margin-top: 1rem;
+            padding-bottom: 3rem;
+            max-width: 90%;
 
             .jumbotron-buttons {
                 flex-direction: column;
@@ -150,14 +178,28 @@
                 .left {
                     padding: 0;
                     text-align: center;
+                    flex-basis: 100%;
                 }
 
                 .right {
+                    align-self: center;
                     border-left: none;
+                    flex-basis: 100%;
+                    padding: 0;
+                    text-align: center;
+
+                    ul {
+                        li {
+                            &::before {
+                                display: none;
+                            }
+                        }
+                    }
                 }
             }
 
             .lr-section {
+                margin-top: 3rem;
                 padding: 0;
                 flex-direction: column;
 
@@ -177,6 +219,15 @@
 
                     &:nth-last-of-type(even) {
                         text-align: center;
+                    }
+                }
+            }
+
+            .quotes-section {
+                .quotes {
+                    .quote {
+                        width: 100%;
+                        padding: 1rem 0;
                     }
                 }
             }
