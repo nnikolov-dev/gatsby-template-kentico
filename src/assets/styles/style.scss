@@ -4,17 +4,10 @@
 @import "./variables/fonts.scss";
 @import "./variables/displays.scss";
 
-// Pages
-@import "./home.scss";
-@import "./about.scss";
-@import "./person.scss";
-
 
 body {
     margin: 0;
     padding: 0;
-    color: $black;
-    background: $background;
     font-family: $font-text;
 
     * {
@@ -28,29 +21,5 @@ body {
     ul, li {
         list-style: none;
         padding-inline-start: 0%;
-    }
-    
-    a {
-        text-decoration: none;
-        transition: all .3s ease;
-        color: $blue;
-        border-bottom: 1px solid transparent;
-        transition: all 0.15s ease-in-out;
-
-        &:hover {
-            border-color: $blue;
-        }
-    }
-
-    h1 {
-        color: $blue;
-        font-family: $font-title;
-        font-weight: 700;
-    }
-
-    .container {
-        flex: 1;
-        position: relative;
-        width: inherit;
     }
 }
