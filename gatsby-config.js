@@ -1,13 +1,13 @@
 module.exports = {
 	siteMetadata: {
-		title: 'Burlington Chambers',
+		title: 'Gatsby Template',
 	},
 	plugins: [
 		{
 			resolve: 'gatsby-plugin-manifest',
 			options: {
-				name: 'Burlington Chambers',
-				short_name: 'Burlington Chambers',
+				name: 'Gatsby Template',
+				short_name: 'Gatsby Template',
 				start_url: '/',
 				background_color: '#F6F6F6',
 				theme_color: '#366897',
@@ -26,7 +26,7 @@ module.exports = {
 		//   resolve: `@kentico/gatsby-source-kontent`,
 		//   options: {
 		//     deliveryClientConfig: {
-		//       projectId: `5ac93d1e-567d-01e6-e3b7-ac435f77b907`,
+		//       projectId: ``,
 		//     },
 		//     languageCodenames: [
 		//       `default`,
